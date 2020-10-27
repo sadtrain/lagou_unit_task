@@ -1,0 +1,23 @@
+<configuration>
+    <typeAliases >
+        <typeAlias alias="user" type="com.entity.User"/>
+    </typeAliases>
+    <datasource>
+        <property name="driver.class">com.mysql.jdbc.Driver</property>
+        <property name="jdbc.url">jdbc:mysql://127.0.0.1/lagou_mybatis</property>
+        <property name="username">root</property>
+        <property name="password">427699</property>
+    </datasource>
+
+
+    <mapper>
+        <property name="locations">
+        </property>
+        <property name="location">
+            <list>
+                <value>mapper\UserMapper.xml</value>
+            </list>
+        </property>
+    </mapper>
+
+</configuration>

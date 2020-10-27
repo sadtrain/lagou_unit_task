@@ -1,0 +1,6 @@
+1.通过xml把jdbc配置写入
+2.在configXML中，指定sqlmapper的位置
+3.使用Configuration把这些配置以及sql都保存起来。Configuration中，存每个statement对应的mapper文件，以及mapper
+里面的sql，调用时，直接传递sql的statement+sqlId，就可以定位到一个mappedStatement
+4.使用SQLSessionFactory创建sqlsession，在sqlsession中实现增删改查
+5.sqlsession中调用executor执行sql，解析sql并且绑定参数

@@ -1,0 +1,21 @@
+<configuration>
+    <datasource>
+        <property name="driver.class">com.mysql.jdbc.Driver</property>
+        <property name="jdbc.url">mysql://127.0.0.1/lagou_mybatis</property>
+        <property name="username">root</property>
+        <property name="password">Alias2011</property>
+    </datasource>
+
+    <mapper>
+        <property name="locations">
+            <list>
+                <value>classpath:*.xml</value>
+            </list>
+        </property>
+        <property name="location">
+            <list>
+                <value>classpath:*.xml</value>
+            </list>
+        </property>
+    </mapper>
+</configuration>

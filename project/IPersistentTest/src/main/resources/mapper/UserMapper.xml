@@ -1,0 +1,30 @@
+<mapper>
+    <statement>com.alias.dao.IUserDAO</statement>
+
+    <resultMap id="userMap" type="com.alias.entity.User">
+        <id property="id" column="id"></id>
+        <result property="name" column="name"></result>
+        <result property="age" column="age"></result>
+    </resultMap>
+
+    <select id="selectById" resultMap="userMap" parameterType="com.alias.entity.User">
+    select * from tb_user where id = #{id}
+    </select>
+    <select id="selectAll" resultMap="userMap">
+        select * from tb_user
+    </select>
+    <select id="selectList" resultMap="userMap" parameterType="com.alias.entity.User">
+        select * from tb_user where id=#{id}
+    </select>
+
+    <insert id="insertByUser" parameterType="com.alias.entity.User">
+        insert into tb_user values(#{id},#{name},#{age})
+    </insert>
+    <update id="updateByUser" parameterType="com.alias.entity.User">
+        update tb_user set name=#{name} where id=#{id}
+    </update>
+    <delete id="deleteById" parameterType="int">
+        delete from tb_user where id=#{userId}
+    </delete>
+
+</mapper>

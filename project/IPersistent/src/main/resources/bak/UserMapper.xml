@@ -1,0 +1,8 @@
+<mapper>
+    <statement>userMapper</statement>
+
+    <select id="selectById">
+    select * from tb_user where user_id = #{id}
+    </select>
+
+</mapper>
