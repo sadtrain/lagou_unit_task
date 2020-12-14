@@ -1,0 +1,4 @@
+URL如下
+http://localhost:8080/demo/query?name=lisi
+有权限的用户只有一个 lisi
+
