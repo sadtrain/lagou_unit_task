@@ -26,6 +26,7 @@ public class LoginController {
     public String login(HttpServletRequest request,String username,String password){
         HttpSession session = request.getSession();
 
+        System.out.println(session.getId());
         User user = userMapper.selectOne(username);
         String failReason;
         if(user==null){

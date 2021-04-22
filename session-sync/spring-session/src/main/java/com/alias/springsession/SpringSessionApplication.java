@@ -8,7 +8,7 @@ import org.springframework.session.data.redis.config.annotation.web.http.EnableR
 
 @SpringBootApplication
 @ComponentScan("com.alias")
-//@EnableRedisHttpSession
+@EnableRedisHttpSession
 @MapperScan("com.alias.mapper")
 public class SpringSessionApplication {
 

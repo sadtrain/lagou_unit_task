@@ -3,6 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"  prefix="fmt"%>
 <html>
 <head>
+    <link rel="icon" href="data:;base64,=">
 </head>
 <body>
 <h1>欢迎登录xxx系统！</h1><br/>

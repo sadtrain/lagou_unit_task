@@ -3,6 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt"  prefix="fmt"%>
 <html>
 <head>
+    <link rel="icon" href="data:;base64,=">
     <title>登录失败</title>
 
     <style>
